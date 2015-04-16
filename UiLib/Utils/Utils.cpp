@@ -385,7 +385,7 @@ namespace UiLib
 
 	int CDuiString::GetLength() const
 	{ 
-		return (int) _tcslen(m_pstr); 
+		return (int) lstrlen(m_pstr); 
 	}
 
 	CDuiString::operator LPCTSTR() const 
@@ -845,7 +845,7 @@ namespace UiLib
 					pItem->pPrev = NULL;
 					pItem->pNext = m_aT[slot];
 					pItem->pNext->pPrev = pItem;
-					//将item移动至链条头部
+					//陆芦item脪脝露炉脰脕脕麓脤玫脥路虏驴
 					m_aT[slot] = pItem;
 				}
 				return pItem->Data;
